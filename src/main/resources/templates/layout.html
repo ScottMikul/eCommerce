@@ -1,0 +1,11 @@
+<header th:fragmeent="header">
+    <a class="logo" href="/product/">CartShop</a>
+    <nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a name="cartButton" class="button icon-right" href="/cart">View Cart
+                <span id="cartheaderbuttontotal" th:if="${subtotal != null &amp;&amp; subtotal != '$0' }" th:text="${subtotal}"></span><i class="material-icons">shopping_cart</i></a></li>
+        </ul>
+    </nav>
+</header>
